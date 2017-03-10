@@ -28,9 +28,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:Personale
 LIBS:XS3868-Shield-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -66,10 +65,6 @@ F 3 "" H 4950 5250 50  0000 C CNN
 	1    4950 5250
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4950 5250 5250 5250
-Wire Wire Line
-	4950 5350 5250 5350
 $Comp
 L CONN_01X03 P1
 U 1 1 58AEDF97
@@ -81,12 +76,6 @@ F 3 "" H 4900 4450 50  0000 C CNN
 	1    4900 4450
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5100 4350 5250 4350
-Wire Wire Line
-	5100 4450 5250 4450
-Wire Wire Line
-	5100 4550 5250 4550
 $Comp
 L AP111733 U2
 U 1 1 58AEE048
@@ -120,14 +109,6 @@ F 3 "" H 5800 3350 50  0000 C CNN
 	1    5800 3350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5800 3100 5800 3250
-Wire Wire Line
-	5800 3150 6150 3150
-Wire Wire Line
-	7050 3100 7050 3250
-Wire Wire Line
-	7050 3150 6750 3150
 $Comp
 L GND #PWR02
 U 1 1 58AEE243
@@ -139,16 +120,6 @@ F 3 "" H 6450 3550 50  0000 C CNN
 	1    6450 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5800 3450 5800 3500
-Wire Wire Line
-	5800 3500 7050 3500
-Wire Wire Line
-	7050 3500 7050 3450
-Wire Wire Line
-	6450 3450 6450 3550
-Connection ~ 6450 3500
-Connection ~ 7050 3150
 $Comp
 L CONN_01X02 P2
 U 1 1 58AEE452
@@ -215,6 +186,34 @@ F 3 "" H 4950 5350 50  0000 C CNN
 	1    4950 5350
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	4950 5250 5250 5250
+Wire Wire Line
+	4950 5350 5250 5350
+Wire Wire Line
+	5100 4350 5250 4350
+Wire Wire Line
+	5100 4450 5250 4450
+Wire Wire Line
+	5100 4550 5250 4550
+Wire Wire Line
+	5800 3100 5800 3250
+Wire Wire Line
+	5800 3150 6150 3150
+Wire Wire Line
+	7050 3100 7050 3250
+Wire Wire Line
+	7050 3150 6750 3150
+Wire Wire Line
+	5800 3450 5800 3500
+Wire Wire Line
+	5800 3500 7050 3500
+Wire Wire Line
+	7050 3500 7050 3450
+Wire Wire Line
+	6450 3450 6450 3550
+Connection ~ 6450 3500
+Connection ~ 7050 3150
 Connection ~ 5800 3150
 Wire Wire Line
 	5150 3250 5250 3250
